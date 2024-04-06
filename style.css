@@ -1,0 +1,8 @@
+body {
+    background-color: #000000; /* Cambia el color de fondo a negro */
+    background-image: url('bg.jpg'); /* Ruta de la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+    background-attachment: fixed; /* Mantiene la imagen de fondo fija */
+    background-size: cover; /* Cubre todo el fondo sin distorsionar la imagen */
+    font-family: Arial, sans-serif;
+}

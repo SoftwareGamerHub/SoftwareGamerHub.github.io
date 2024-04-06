@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SoftwareGames</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Enlaza tu archivo CSS externo -->
+    <style>
+        #hora-actual {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            color: white;
+            font-size: 20px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: orange; text-align: center; text-shadow: 1px 1px 2px #d11616, -1px -1px 2px #ffffff4b, 1px -1px 2px #0483eb, -1px 1px 2px #86c70e;">Software & Games</h1>
+    <h3 style="color: yellowgreen; text-align: center; text-shadow: 1px 1px 2px #df1818, -1px -1px 2px #bb0a0a4f, 1px -1px 2px #1546e7, -1px 1px 2px #33e90e;">Software y Juegos</h3>
+    <div id="hora-actual"></div>
+
+    <script>
+        function mostrarHora() {
+            var fecha = new Date();
+            var hora = fecha.getHours();
+            var minutos = fecha.getMinutes();
+            var segundos = fecha.getSeconds();
+            
+            // Agregar ceros delante de los números menores que 10
+            hora = hora < 10 ? '0' + hora : hora;
+            minutos = minutos < 10 ? '0' + minutos : minutos;
+            segundos = segundos < 10 ? '0' + segundos : segundos;
+            
+            var horaActual = hora + ':' + minutos + ':' + segundos;
+            document.getElementById('hora-actual').textContent = horaActual;
+            
+            setTimeout(mostrarHora, 1000); // Actualizar cada segundo
+        }
+        
+        // Llamar a la función para iniciarla
+        mostrarHora();
+    </script>
+</body>
+</html>
