@@ -1,50 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>SoftwareGames</title>
-    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Enlaza tu archivo CSS externo -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software & Games</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
         #contenedor {
-            max-width: 800px; /* Ancho máximo del contenedor */
-            margin: 0 auto 20px; /* Centrar el contenedor horizontalmente y agregar margen inferior */
-            padding: 20px; /* Espaciado interno del contenedor */
-        }   
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
         .titulo {
-            margin-bottom: 20px; /* Espaciado inferior para separar del contenido */
+            color: #ff7f00;
+            font-size: 36px;
             text-align: center;
-            color: orange;
-            text-shadow: 1px 1px 2px #d11616, -1px -1px 2px #ffffff4b, 1px -1px 2px #0483eb, -1px 1px 2px #09a0ce;
+            margin: 0;
         }
         .subtitulo {
-            margin-bottom: 20px; /* Espaciado inferior para separar del contenido */
+            color: #50c878;
+            font-size: 24px;
             text-align: center;
-            color: yellowgreen;
-            text-shadow: 1px 1px 2px #df1818, -1px -1px 2px #bb0a0a4f, 1px -1px 2px #1546e7, -1px 1px 2px #0f3fdf;
+            margin-top: 10px;
         }
         .seccion {
-            margin-bottom: 20px; /* Espaciado inferior entre secciones */
-            padding: 10px; /* Espaciado interno de cada sección */
-            background: linear-gradient(45deg, #f0f0f098, #594868); /* Degradado de color de fondo */
-            border: 1px solid #ccc; /* Borde de las secciones */
-            border-radius: 5px; /* Borde redondeado de las secciones */
+            margin-top: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, #594868, #85d8ce);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
         .grid-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
-            grid-gap: 20px; /* Espacio entre las celdas de la cuadrícula */
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
         }
         .grid-item {
-            padding: 10px;
-            background-color: #f0f0f0; /* Color de fondo base para el contraste */
-            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #f7f7f7;
             border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
         #hora-actual {
             position: fixed;
-            bottom: 10px;
-            right: 10px;
-            color: white;
-            font-size: 20px;
+            bottom: 20px;
+            right: 20px;
+            color: #fff;
+            font-size: 24px;
             padding: 10px;
             background-color: rgba(0, 0, 0, 0.5);
             border-radius: 5px;
@@ -54,23 +65,23 @@
 <body>
     <div id="contenedor">
         <h1 class="titulo">Software & Games</h1>
-        <h3 class="subtitulo">Software y Juegos</h3>
+        <h3 class="subtitulo">Explora el mundo del software y los juegos</h3>
         
         <div class="seccion grid-container">
             <div class="grid-item">
                 <h2>Videos</h2>
-                <p>Software</p>
-                <p>Gaming</p>
+                <p>Descubre los últimos lanzamientos de software y videojuegos.</p>
+                <p>Explora tutoriales y reseñas.</p>
             </div>
             <div class="grid-item">
                 <h2>Información</h2>
-                <p>Software</p>
-                <p>Gaming</p>
+                <p>Encuentra información detallada sobre software y juegos.</p>
+                <p>Conoce las últimas noticias y actualizaciones.</p>
             </div>
             <div class="grid-item">
                 <h2>Updates</h2>
-                <p>Channel</p>
-                <p>Mod project</p>
+                <p>Obtén actualizaciones sobre canales de video, mods y proyectos.</p>
+                <p>Explora nuevos contenidos y características.</p>
             </div>
         </div>
         
