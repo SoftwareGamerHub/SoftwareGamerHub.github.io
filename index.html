@@ -4,6 +4,32 @@
     <title>SoftwareGames</title>
     <link rel="stylesheet" type="text/css" href="style.css"> <!-- Enlaza tu archivo CSS externo -->
     <style>
+        #contenedor {
+            max-width: 800px; /* Ancho máximo del contenedor */
+            margin: 0 auto; /* Centrar el contenedor horizontalmente */
+            padding: 20px; /* Espaciado interno del contenedor */
+            background-color: #f7f7f7; /* Color de fondo del contenedor */
+            border: 2px solid #ccc; /* Borde del contenedor */
+            border-radius: 10px; /* Borde redondeado del contenedor */
+        }
+        .seccion {
+            margin-bottom: 20px; /* Espaciado inferior entre secciones */
+            padding: 10px; /* Espaciado interno de cada sección */
+            background-color: #fff; /* Color de fondo de las secciones */
+            border: 1px solid #ccc; /* Borde de las secciones */
+            border-radius: 5px; /* Borde redondeado de las secciones */
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Tres columnas de igual tamaño */
+            grid-gap: 20px; /* Espacio entre las celdas de la cuadrícula */
+        }
+        .grid-item {
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
         #hora-actual {
             position: fixed;
             bottom: 10px;
@@ -17,9 +43,30 @@
     </style>
 </head>
 <body>
-    <h1 style="color: orange; text-align: center; text-shadow: 1px 1px 2px #d11616, -1px -1px 2px #ffffff4b, 1px -1px 2px #0483eb, -1px 1px 2px #86c70e;">Software & Games</h1>
-    <h3 style="color: yellowgreen; text-align: center; text-shadow: 1px 1px 2px #df1818, -1px -1px 2px #bb0a0a4f, 1px -1px 2px #1546e7, -1px 1px 2px #33e90e;">Software y Juegos</h3>
-    <div id="hora-actual"></div>
+    <div id="contenedor">
+        <h1 style="color: orange; text-align: center; text-shadow: 1px 1px 2px #d11616, -1px -1px 2px #ffffff4b, 1px -1px 2px #0483eb, -1px 1px 2px #09a0ce;">Software & Games</h1>
+        <h3 style="color: yellowgreen; text-align: center; text-shadow: 1px 1px 2px #df1818, -1px -1px 2px #bb0a0a4f, 1px -1px 2px #1546e7, -1px 1px 2px #0f3fdf;">Software y Juegos</h3>
+        
+        <div class="grid-container">
+            <div class="grid-item">
+                <h2>Videos</h2>
+                <p>Software</p>
+                <p>Gaming</p>
+            </div>
+            <div class="grid-item">
+                <h2>Información</h2>
+                <p>Software</p>
+                <p>Gaming</p>
+            </div>
+            <div class="grid-item">
+                <h2>Updates</h2>
+                <p>Channel</p>
+                <p>Mod project</p>
+            </div>
+        </div>
+        
+        <div id="hora-actual"></div>
+    </div>
 
     <script>
         function mostrarHora() {
